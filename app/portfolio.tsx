@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, MapPin, Linkedin, GraduationCap, Briefcase, Code2, ChevronRight, Download, Sparkles } from "lucide-react";
