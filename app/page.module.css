@@ -1,0 +1,54 @@
+/* ── page.module.css ──────────────────────────────────────────────
+   Styles specific to app/page.tsx (home page only).
+   Shared styles live in globals.css.
+────────────────────────────────────────────────────────────────── */
+
+/* Scroll-spy nav pills (home page inline nav, if kept) */
+.navPill {
+  padding: 4px 14px;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: background 0.2s, color 0.2s;
+  color: var(--muted);
+}
+.navPill:hover { background: var(--card); color: var(--ink); }
+.navPillActive { background: var(--accent); color: #fff; }
+
+/* Experience timeline card */
+.expCard {
+  border-left: 2px solid var(--rule);
+  padding-left: 1.5rem;
+  transition: border-color 0.2s;
+}
+.expCard:hover  { border-left-color: var(--accent); }
+.expCardOpen    { border-left-color: var(--accent); }
+
+/* Bullet list items inside experience cards */
+.bullet::before {
+  content: '–';
+  margin-right: 0.5rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* Hero stats row */
+.statsRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 4rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--rule);
+}
+
+/* Skill group card */
+.skillCard {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 1.25rem;
+  transition: border-color 0.2s;
+}
+.skillCard:hover { border-color: var(--accent); }
