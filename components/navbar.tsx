@@ -35,8 +35,6 @@ export default function Navbar() {
       e.preventDefault();
       document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     }
-    // If on another page — let Next.js navigate to / and the browser
-    // will handle the hash scroll automatically
   };
 
   return (

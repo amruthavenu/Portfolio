@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 // ── DATA ────────────────────────────────────────────────────────────────────
 
 const EXPERIENCE = [
@@ -182,11 +183,7 @@ export default function Portfolio() {
           
         {/* ── HERO ── */}
         <section id="about" ref={(el) => { sectionRefs.current["About"] = el; }} className="pt-12">
-          
-          {/* Add this two-column wrapper */}
           <div className="flex flex-col md:flex-row md:items-center gap-10 mb-10">
-            
-            {/* Left — existing text content */}
             <div className="flex-1">
               <div className={`fade ${heroVisible ? "show" : ""}`} style={{ transitionDelay: "0.05s" }}>
                 <p className="text-[0.65rem] tracking-[0.35em] uppercase mb-4" style={{ color: "var(--muted-portfolio)" }}>
@@ -217,6 +214,13 @@ export default function Portfolio() {
                   >
                     View Experience
                   </button>
+                  <Link
+                      href="/projects"
+                      className="px-5 py-2.5 text-[0.68rem] tracking-[0.15em] uppercase font-medium text-white rounded-sm"
+                      style={{ background: "var(--accent-portfolio)" }}
+                    >
+                      View Projects
+                    </Link>
                   <button
                     onClick={() => scrollTo("Contact")}
                     className="px-5 py-2.5 text-[0.68rem] tracking-[0.15em] uppercase rounded-sm border"
@@ -245,9 +249,7 @@ export default function Portfolio() {
                 />
               </div>
             </div>
-
           </div>
-
          {/* quick stats */}
           <div className={`fade ${heroVisible ? "show" : ""} mt-16 grid grid-cols-3 gap-6 pt-10 border-t`}
             style={{ transitionDelay: "0.55s", borderColor: "var(--rule)" }}>
@@ -499,7 +501,7 @@ export default function Portfolio() {
                 ))}
               </div>
             </div>
-          {/*--Form Data---*/}
+          {/*────Form Data──*/}
           
           {mounted && (
             <form className="space-y-3" onSubmit={handleSubmit}>

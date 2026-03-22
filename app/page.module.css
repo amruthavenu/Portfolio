@@ -3,7 +3,6 @@
    Shared styles live in globals.css.
 ────────────────────────────────────────────────────────────────── */
 
-/* Scroll-spy nav pills (home page inline nav, if kept) */
 .navPill {
   padding: 4px 14px;
   border-radius: 999px;
