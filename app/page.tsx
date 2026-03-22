@@ -200,7 +200,7 @@ export default function Portfolio() {
               </div>
               <div className={`fade ${heroVisible ? "show" : ""}`} style={{ transitionDelay: "0.32s" }}>
                 <p className="max-w-2xl text-[0.82rem] leading-loose mb-10" style={{ color: "var(--muted-portfolio)" }}>
-                  Software developer with experience designing and building scalable enterprise
+                  Software developer with experience in designing and building scalable enterprise
                   applications across backend and frontend layers. Strong expertise in Java, Spring Boot,
                   and modern frontend technologies including Angular, JavaScript and TypeScript.
                 </p>
