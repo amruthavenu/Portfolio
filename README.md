@@ -3,7 +3,7 @@
 Personal portfolio website built with **Next.js 15**, **Tailwind CSS**, and **TypeScript**. Features a clean, elegant design showcasing my experience as a full-stack software developer based in Stuttgart, Germany.
 
 ## 🔗 Live Site
-> Coming soon — deploy link will be added here
+(https://portfolio-amrutha-venugopal.vercel.app/)
 
 ---
 
@@ -28,7 +28,7 @@ Personal portfolio website built with **Next.js 15**, **Tailwind CSS**, and **Ty
 | UI Components | shadcn/ui |
 | Email | Resend |
 | Fonts | Playfair Display + DM Mono |
-| Deployment | Vercel (planned) |
+| Deployment | Vercel |
 
 ---
 
